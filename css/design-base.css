@@ -1,0 +1,70 @@
+
+  :root {
+    --accent: #bd5d38;
+    --ink: #343a40;
+    --muted: #6c757d;
+    --paper: #ffffff;
+    --line: #e9ecef;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .designer-page[hidden] {
+    display: none !important;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  .glass-header {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(222, 226, 230, 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(222, 226, 230, 0.4) 1px, transparent 1px);
+  }
+  .card-hover {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: #bd5d38;
+    box-shadow: 0 16px 32px -8px rgba(189, 93, 56, 0.08);
+  }
+  .journey-glow {
+    box-shadow: 0 20px 50px -10px rgba(189, 93, 56, 0.35);
+  }
+
+body { font-size: 16px; line-height: 1.65; }
+h1, h2, h3 { font-weight: 600 !important; letter-spacing: -0.025em; }
+h1 { line-height: 1.12 !important; }
+.font-sans { font-family: Arial, Helvetica, sans-serif; }
+p.text-sm, article p { font-size: 1rem; line-height: 1.75; }
+.wordmark { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; letter-spacing: .06em; white-space: nowrap; }
+.wordmark span { color: #bd5d38; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #bd5d38; outline-offset: 4px; }
+section.bg-terracotta :is(a,summary):focus-visible { outline-color: white; }
+.skip-link { position: fixed; left: 12px; top: -100px; z-index: 100; padding: 12px 20px; background: white; color: #343a40; }
+.skip-link:focus { top: 12px; }
+[id$="-Contacts"] [class*="text-white/"] { color: white; }
+@media (max-width: 639px) { h1 { font-size: 2.6rem !important; } header a[href="#home-Contacts"] { padding: 10px; font-size: 11px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+@media (max-width: 639px) {
+  header > div:first-child { gap: 10px; padding-left: 16px; padding-right: 16px; }
+  header .wordmark { font-size: 23px; }
+  header a[href*="home-Contacts"] { padding: 8px; font-size: 10px; letter-spacing: 0; }
+  header > div > div { gap: 6px; }
+}

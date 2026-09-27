@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#bd5d38" name="theme-color"/>
+  <title>
+   Electronics, Software &amp; Mechanical Design | SAARA
+  </title>
+  <!-- Tailwind CDN & Google Fonts -->
+  <link href="/css/site.css" rel="stylesheet"/>
+  <link href="/assets/img/favicon.png" rel="icon"/>
+  <meta content="Develop a new electronic product or advance an existing design. SAARA combines PCB design, embedded software, mechanical engineering and prototyping." name="description"/>
+  <meta content="Electronics, Software &amp; Mechanical Design | SAARA" property="og:title"/>
+  <meta content="Develop a new electronic product or advance an existing design. SAARA combines PCB design, embedded software, mechanical engineering and prototyping." property="og:description"/>
+  <meta content="https://saara.eu/product-development/" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <link href="https://saara.eu/product-development/" rel="canonical"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "Organization", "name": "SAARA", "legalName": "SAARA EOOD", "url": "https://saara.eu/", "email": "info@saara.eu", "alternateName": "SAARA Ltd", "identifier": "206117521", "address": {"@type": "PostalAddress", "streetAddress": "6 Dr Petar Beron St., entrance A, floor 4, apartment 21", "addressLocality": "Parvomay", "postalCode": "4270", "addressCountry": "BG"}}
+  </script>
+ </head>
+ <body class="min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
+  <a class="skip-link" href="#product-development-main">
+   Skip to content
+  </a>
+  <!-- TOP STATUS / META TICKER -->
+  <aside class="bg-ink-dark text-gray-300 text-[11px] font-sans py-2 px-5 sm:px-8 border-b border-white/10 hidden xl:block">
+   <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center gap-6">
+     <span class="inline-flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-terracotta">
+      </span>
+      <span>
+       ENGINEERING IN BULGARIA
+      </span>
+     </span>
+     <span class="text-white/20">
+      |
+     </span>
+     <span class="text-white/70">
+      OFFICES &amp; PARTNERS WORLDWIDE
+     </span>
+    </div>
+    <div class="flex items-center gap-6 text-white/60">
+     <span class="hover:text-white transition-colors">
+      FROM DESIGN TO DELIVERY
+     </span>
+     <span class="text-white/20">
+      |
+     </span>
+     <a class="hover:text-terracotta text-white/90 font-medium transition-colors" href="mailto:info@saara.eu">
+      info@saara.eu
+     </a>
+    </div>
+   </div>
+  </aside>
+  <!-- GLOBAL PERSISTENT HEADER -->
+  <header class="sticky top-0 z-50 glass-header">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between gap-6">
+    <!-- BRAND LOGO -->
+    <a aria-label="SAARA home" class="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-terracotta rounded-sm py-1" href="/">
+     <span class="wordmark">
+      SAARA
+      <span>
+       .
+      </span>
+     </span>
+    </a>
+    <!-- MAIN NAVIGATION -->
+    <nav aria-label="Main navigation" class="hidden xl:flex items-center gap-5 text-[13px] font-semibold text-ink tracking-tight">
+     <a class="nav-item hover:text-terracotta transition-colors py-1" href="/">
+      Home
+     </a>
+     <a aria-current="page" class="nav-item hover:text-terracotta transition-colors py-1 text-terracotta" href="/product-development/">
+      Product Development
+     </a>
+     <a class="nav-item hover:text-terracotta transition-colors py-1" href="/manufacturing/">
+      Manufacturing &amp; Certification
+     </a>
+     <a class="nav-item hover:text-terracotta transition-colors py-1" href="/supply-chain/">
+      Supply Chain
+     </a>
+     <a class="nav-item hover:text-terracotta transition-colors py-1" href="/#home-process">
+      How We Work
+     </a>
+     <a class="nav-item hover:text-terracotta transition-colors py-1" href="/#home-network">
+      Our Network
+     </a>
+    </nav>
+    <!-- CTA -->
+    <div class="flex items-center gap-3">
+     <a class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2.5 bg-transparent border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-white text-xs sm:text-[13px] font-bold tracking-wide uppercase transition-all duration-200 rounded-sm" href="/#home-Contacts">
+      <span>
+       Discuss your project
+      </span>
+      <span aria-hidden="true" class="text-sm font-normal">
+       ↗
+      </span>
+     </a>
+     <!-- Mobile menu toggle -->
+     <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu" class="xl:hidden p-2 text-ink hover:text-terracotta focus:outline-none" id="mobile-menu-btn">
+      ☰
+     </button>
+    </div>
+   </div>
+   <!-- MOBILE DROPDOWN -->
+   <div class="hidden xl:hidden border-t border-borderline bg-white px-6 py-5 shadow-xl space-y-3 text-sm font-semibold" id="mobile-menu">
+    <a class="block py-2 text-ink hover:text-terracotta" href="/">
+     Home
+    </a>
+    <a class="block py-2 text-ink hover:text-terracotta" href="/product-development/">
+     Product Development
+    </a>
+    <a class="block py-2 text-ink hover:text-terracotta" href="/manufacturing/">
+     Manufacturing &amp; Certification
+    </a>
+    <a class="block py-2 text-ink hover:text-terracotta" href="/supply-chain/">
+     Supply Chain &amp; Delivery
+    </a>
+    <a class="block py-2 text-ink hover:text-terracotta" href="/#home-process">
+     How We Work
+    </a>
+    <a class="block py-2 text-ink hover:text-terracotta" href="/#home-network">
+     Our Network
+    </a>
+    <div class="pt-2">
+     <a class="block text-center py-2.5 bg-terracotta text-white rounded font-bold uppercase text-xs" href="/#home-Contacts">
+      Discuss Your Project ↗
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- ========================================== -->
+  <!-- PAGE 1: HOME -->
+  <!-- ========================================== -->
+  <!-- ========================================== -->
+  <!-- PAGE 2: PRODUCT DEVELOPMENT -->
+  <!-- ========================================== -->
+  <div class="designer-page" id="product-development">
+   <main id="product-development-main">
+    <!-- HERO -->
+    <section class="bg-surfacebg border-b border-borderline py-16 sm:py-24">
+     <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <a class="inline-flex items-center gap-2 text-xs font-bold text-bodygrey hover:text-terracotta mb-8 uppercase tracking-wider" href="/">
+       <span>
+        ← Back to Home
+       </span>
+      </a>
+      <p class="text-terracotta font-sans text-[11px] font-bold uppercase tracking-widest mb-3">
+       PRODUCT DEVELOPMENT
+      </p>
+      <h1 class="text-4xl sm:text-6xl font-normal text-ink-dark tracking-tight max-w-4xl leading-tight">
+       Engineering the
+       <span class="font-sans not-italic text-terracotta">
+        complete product.
+       </span>
+      </h1>
+      <p class="text-lg sm:text-xl text-bodygrey max-w-3xl mt-6 leading-relaxed">
+       Turn your requirements into a working product with electronics, embedded software and mechanical design developed together.
+      </p>
+      <div class="pt-8">
+       <a class="inline-flex items-center gap-3 px-7 py-3.5 bg-terracotta hover:bg-terracotta-hover text-white text-sm font-semibold rounded-sm" href="/product-development/#product-development-Contacts">
+        <span>
+         Discuss your project
+        </span>
+        <span>
+         ↗
+        </span>
+       </a>
+      </div>
+     </div>
+    </section>
+    <!-- INTRO -->
+    <section class="py-16 sm:py-24 border-b border-borderline bg-white">
+     <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+       <div class="lg:col-span-5">
+        <h2 class="text-3xl sm:text-4xl font-sans font-normal text-ink-dark">
+         Product development with SAARA
+        </h2>
+       </div>
+       <div class="lg:col-span-7">
+        <p class="text-xl sm:text-2xl text-bodygrey font-normal leading-relaxed">
+         For companies developing a new device or extending an existing product, we provide the engineering needed to move forward. Start with an idea, a technical specification or a prototype. We define the next development stage with you.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- DETAIL GRID (4 ARTICLES) -->
+    <section aria-label="Service capabilities" class="py-16 sm:py-24 border-b border-borderline bg-surfacebg">
+     <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+       <article class="p-8 sm:p-10 bg-white border border-borderline rounded-sm">
+        <span class="font-sans text-xs font-bold text-terracotta px-2.5 py-1 bg-terracotta-light rounded mb-6 inline-block">
+         01
+        </span>
+        <h2 class="text-2xl font-sans font-semibold text-ink-dark mb-4">
+         Electronics &amp; embedded software
+        </h2>
+        <p class="text-sm sm:text-base text-bodygrey leading-relaxed">
+         We design circuit boards and the software that runs on them, from microcontroller firmware to embedded Linux. Our work includes hardware architecture, PCB design, board support packages, drivers and bootloaders.
+        </p>
+       </article>
+       <article class="p-8 sm:p-10 bg-white border border-borderline rounded-sm">
+        <span class="font-sans text-xs font-bold text-terracotta px-2.5 py-1 bg-terracotta-light rounded mb-6 inline-block">
+         02
+        </span>
+        <h2 class="text-2xl font-sans font-semibold text-ink-dark mb-4">
+         Mechanical &amp; industrial design
+        </h2>
+        <p class="text-sm sm:text-base text-bodygrey leading-relaxed">
+         We develop the product enclosure, plastic parts and mechanical assemblies around the electronics and the way the device will be used. Tooling and injection moulds are coordinated with manufacturing partners.
+        </p>
+       </article>
+       <article class="p-8 sm:p-10 bg-white border border-borderline rounded-sm">
+        <span class="font-sans text-xs font-bold text-terracotta px-2.5 py-1 bg-terracotta-light rounded mb-6 inline-block">
+         03
+        </span>
+        <h2 class="text-2xl font-sans font-semibold text-ink-dark mb-4">
+         Connected devices &amp; custom subsystems
+        </h2>
+        <p class="text-sm sm:text-base text-bodygrey leading-relaxed">
+         We integrate wireless connectivity, IoT gateways, custom displays and power systems. This includes custom battery packs and battery management systems designed around your device requirements.
+        </p>
+       </article>
+       <article class="p-8 sm:p-10 bg-white border border-borderline rounded-sm">
+        <span class="font-sans text-xs font-bold text-terracotta px-2.5 py-1 bg-terracotta-light rounded mb-6 inline-block">
+         04
+        </span>
+        <h2 class="text-2xl font-sans font-semibold text-ink-dark mb-4">
+         Prototypes &amp; verification
+        </h2>
+        <p class="text-sm sm:text-base text-bodygrey leading-relaxed">
+         We build and test prototypes to check the design before production. Manufacturing requirements and the intended sales markets inform development, including the testing needed for certification.
+        </p>
+       </article>
+      </div>
+     </div>
+    </section>
+    <!-- SCOPE CHECKLIST -->
+    <section class="py-16 sm:py-20 border-b border-borderline bg-white">
+     <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-3xl">
+       <p class="text-terracotta font-sans text-[11px] font-bold uppercase tracking-widest mb-3">
+        A CONNECTED APPROACH
+       </p>
+       <h2 class="text-3xl font-sans font-semibold text-ink-dark mb-8">
+        Support for your next product stage
+       </h2>
+       <ul class="space-y-4">
+        <li class="flex items-center gap-3 text-base text-ink-dark">
+         <span class="w-5 h-5 rounded-full bg-terracotta-light text-terracotta flex items-center justify-center text-xs font-bold">
+          ✓
+         </span>
+         <span>
+          Product requirements and system architecture
+         </span>
+        </li>
+        <li class="flex items-center gap-3 text-base text-ink-dark">
+         <span class="w-5 h-5 rounded-full bg-terracotta-light text-terracotta flex items-center justify-center text-xs font-bold">
+          ✓
+         </span>
+         <span>
+          Hardware, software and mechanical development
+         </span>
+        </li>
+        <li class="flex items-center gap-3 text-base text-ink-dark">
+         <span class="w-5 h-5 rounded-full bg-terracotta-light text-terracotta flex items-center justify-center text-xs font-bold">
+          ✓
+         </span>
+         <span>
+          Prototype builds and design verification
+         </span>
+        </li>
+        <li class="flex items-center gap-3 text-base text-ink-dark">
+         <span class="w-5 h-5 rounded-full bg-terracotta-light text-terracotta flex items-center justify-center text-xs font-bold">
+          ✓
+         </span>
+         <span>
+          Preparation for certification and manufacturing
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="bg-terracotta text-white py-20" id="product-development-Contacts">
+     <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+       <div class="lg:col-span-7 space-y-5">
+        <p class="font-sans text-xs font-bold tracking-widest uppercase text-white/80">
+         LET’S BUILD WHAT’S NEXT
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-normal tracking-tight">
+         Let’s discuss your product.
+        </h2>
+        <p class="text-white/90 text-base max-w-xl">
+         Send us a short description of your product and the support you need. Include any available specifications, expected quantities, target markets and timing. We’ll discuss the scope and the next step with you.
+        </p>
+        <div class="pt-2">
+         <a class="inline-flex items-center gap-3 px-8 py-3.5 bg-white text-ink-dark font-bold text-sm rounded-sm hover:bg-gray-100" href="mailto:info@saara.eu?subject=Product%20development%20enquiry">
+          <span>
+           Discuss your project
+          </span>
+          <span>
+           ↗
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="lg:col-span-5 bg-white/10 p-8 rounded border border-white/20 space-y-4">
+        <p class="text-sm font-semibold mb-2">
+         SAARA EOOD
+        </p>
+        <a class="text-2xl font-sans font-semibold text-white block" href="mailto:info@saara.eu">
+         info@saara.eu
+        </a>
+        <p class="text-sm text-white/80">
+         Plovdiv, Bulgaria
+         <br/>
+         Offices &amp; partners worldwide
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+  </div>
+  <!-- ========================================== -->
+  <!-- PAGE 3: MANUFACTURING -->
+  <!-- ========================================== -->
+  <!-- ========================================== -->
+  <!-- PAGE 4: SUPPLY CHAIN -->
+  <!-- ========================================== -->
+  <!-- ========================================== -->
+  <!-- GLOBAL FOOTER -->
+  <!-- ========================================== -->
+  <footer class="mt-auto border-t border-borderline bg-white py-12">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-borderline">
+     <div>
+      <a class="inline-block mb-2" href="/">
+       <span class="wordmark">
+        SAARA
+        <span>
+         .
+        </span>
+       </span>
+      </a>
+      <p class="text-xs text-bodygrey">
+       Product development. Manufacturing. Supply chain.
+      </p>
+     </div>
+     <div class="flex items-center gap-8 text-xs font-semibold text-ink-dark">
+      <a class="hover:text-terracotta flex items-center gap-1.5 transition-colors" href="mailto:info@saara.eu">
+       <span aria-hidden="true">
+        ↗
+       </span>
+       Email
+      </a>
+     </div>
+    </div>
+    <p class="text-sm text-bodygrey mt-3" id="company-details">
+     <strong>
+      SAARA EOOD
+     </strong>
+     · UIC 206117521
+     <br/>
+     Registered office: 6 Dr Petar Beron St., entrance A, floor 4, apartment 21, Parvomay 4270, Bulgaria.
+    </p>
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-bodygrey gap-4">
+     <small class="text-xs">
+      © SAARA EOOD. All rights reserved.
+     </small>
+     <div class="flex items-center gap-6">
+      <span class="text-[11px] font-sans">
+      </span>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- CLIENT-SIDE ROUTING & INTERACTIONS SCRIPT -->
+  <script>
+   (() => {
+ const pages = [...document.querySelectorAll('.designer-page')];
+ const button = document.getElementById('mobile-menu-btn');
+ const menu = document.getElementById('mobile-menu');
+ const closeMenu = () => { menu.classList.add('hidden'); button.setAttribute('aria-expanded', 'false'); };
+ button.addEventListener('click', () => { const open = menu.classList.toggle('hidden') === false; button.setAttribute('aria-expanded', String(open)); });
+ document.addEventListener('keydown', event => { if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { closeMenu(); button.focus(); } });
+ menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+
+})();
+  </script>
+ </body>
+</html>
